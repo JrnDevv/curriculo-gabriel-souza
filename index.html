@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c1f98207ae.js" crossorigin="anonymous"></script>   
+  <title>currículo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <div id="nameandtitle">
+      <h1>Gabriel Souza</h1>
+      <h2>Estudante de ADS</h2>
+    </div>
+  </div>
+
+  <div id="container">
+    <!-- ESQUERDA -->
+    <div id="sidebar">
+      <div class="card">   
+        <h3>Contato</h3>
+        <ul id="contact">
+          <li><i class="fa-solid fa-envelope"></i> teenjrn@gmail.com</li>
+          <li><i class="fa-brands fa-whatsapp"></i> 13 98218-7128</li>
+          <li><i class="fa-solid fa-house"></i> São Paulo, SP</li>
+          <li><i class="fa-brands fa-github"></i> <a href="https://github.com/JrnDevv" target="_blank">GitHub</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Skills</h3>
+        <ul id="skills">
+          <li><i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-js"></i> <p> HTML, CSS e JavaScript</li>
+          <li><i class="fa-brands fa-python"></i> Programação em Python (nível básico)</li>
+          <li><i class="fa-solid fa-database"></i> MySQL - Modelagem de Banco de Dados</li>
+          <li><i class="fa-brands fa-github"></i> Controle de versionamento com Git e GitHub</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- DIREITA -->
+    <div id="content">
+      <div class="card">
+        <h3>Sobre mim<i class="fa-solid fa-user"></i></h3>
+        <p>
+          Busco uma oportunidade onde eu possa aplicar e desenvolver minhas habilidades técnicas e criativas,
+          contribuindo para o crescimento da equipe e da organização enquanto evoluo pessoal e profissionalmente.
+        </p>
+        </div>
+        <div class="card">
+          <h3>Formação acadêmica</h3>
+          <i class="fa-solid fa-code"></i>Análise e Desenvolvimento de Sistemas – UniFECAF EAD - (2024–2027) <br>
+          Design Gráfico - UniFECAF EAD - (2024-2026) 
+          
+          </div>
+          <div class="card">
+          <h3>Experiencias</h3>
+          Casa da Mulher – Itanhaém/SP
+          Cargo: Assistente de Design e Suporte Web
+          Período: Desde 08/2024 – Atual (12 meses)
+          Manipulação e tratamento de imagens
+          Organização de arquivos digitais
+          Manutenção de projetos gráficos e páginas web
+          <br>
+          <br>
+          Camp – Itanhaém/SP
+          Cargo: Ajudante de Operadores de Caixa e Atendente de Padaria
+          Período: Início em 2023 – 15 meses  
+          Apoio no atendimento ao cliente
+          Suporte aos operadores de caixa
+         Organização de produtos e ambiente
+        <p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+    body {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    #header {
+      background-color: rgb(52, 85, 231);
+      margin: 50px 0;
+      margin-top: auto;
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    #nameandtitle {
+      background-color: white;
+      width: 500px;
+      margin: 0px auto;
+      text-align: center;
+      padding: 20px;        
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+     
+    }
+
+    #nameandtitle h1,
+    #nameandtitle h2 {
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    #container {
+      display: grid;
+      grid-template-columns: 30% 70%; /* esquerda / direita */
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    #sidebar, 
+    #content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h3 {
+      font-family: "JetBrains Mono", monospace;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    #contact,
+    #skills {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 ;
+    }
+
+    #contact li,
+    #skills li {
+    margin: 10px 0;
+    }
+
+    #contact i,
+    #skills i {
+      color: rgb(52, 85, 231);
+    }
+
+    #card,i {
+      color: blue;
+    }
+
+    .fa-solid fa-code {
+      color: blue;
+    }
